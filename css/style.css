@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+dl,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+:root {
+    --gradient: linear-gradient(90deg, #852170, #CF414B)
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-size: 20px;
+    background: var(--gradient);
+}
+
+main {
+    margin: 150px auto 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* =========================== Common Css End ====================== */
+
+/* ============================== Left Part Start =====================*/
+.taskMainLeft {
+    border: 1px solid rgba(241, 241, 241, 0.3);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    padding: 24px 0 0 24px;
+    height: 100%;
+}
+
+.taskMainLeft h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #D9D9D9;
+    border-bottom: 1px solid rgba(241, 241, 241, 0.5);
+    padding-bottom: 10px;
+    margin: 0 24px 40px 0;
+}
+
+.taskMainLeft ul {
+    height: 464px;
+    padding-right: 24px;
+    overflow-y: auto;
+}
+
+.taskMainLeft ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #bbbbbb;
+    padding: 6px 10px;
+    border: 1px solid rgba(164, 164, 164, .5);
+    margin-bottom: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.taskMainLeft ul li:hover {
+    background-color: rgba(241, 241, 241, .1);
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.taskMainLeft ul li span {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskMainLeft ul li span i {
+    font-style: 26px;
+    color: #bbbbbb;
+    cursor: pointer;
+
+}
+
+/* ============================== Right Part Start ===================== */
+
+.taskMainRight {
+    width: 648px;
+}
+
+.inputTask {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 24px;
+}
+
+.inputTask input {
+    width: 100%;
+    padding: 10px 24px;
+    border: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.inputTask button {
+    padding: 10px 20px;
+    border: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #CF414B;
+    background: #fff;
+}
+
+.inputTask button:hover {
+    background: #f1f1f1;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    transition: all linear .2s;
+}
+
+.inputTask #upBtn {
+    display: none;
+}
+
+.taskBox {
+    height: 512px;
+    background: #f1f1f1;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    padding: 24px 0 0 24px;
+    margin-top: 24px;
+}
+
+.taskBox h2 {
+    font-size: 22px;
+    font-weight: 700;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border-bottom: 1px solid #852170;
+    padding-bottom: 10px;
+    margin: 0 24px 30px 0;
+}
+
+.taskBox ul {
+    height: 414px;
+    padding-right: 24px;
+    overflow-y: auto;
+}
+
+.taskBox ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1e1e1e;
+    padding: 6px 10px;
+    margin-bottom: 5px;
+    border: 1px solid rgba(164, 164, 164, .5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+
+.taskBox ul li span {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskBox ul li span i {
+    font-style: 26px;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+
+.taskBox ul li:hover {
+    background-color: #852170;
+    color: #f1f1f1;
+}
+
+.taskBox ul li:hover i {
+    color: #f1f1f1;
+}
+
+/* ============================== Responsive Part Start ===================== */
+
+@media (max-width: 575px) {
+
+    main {
+        margin: 24px auto 0;
+    }
+
+    .inputTask input {
+        font-size: 16px;
+        padding: 6px 0 6px 16px;
+    }
+
+    .inputTask button {
+        font-size: 16px;
+        padding: 6px 16px;
+    }
+
+    .taskMainLeft {
+        padding: 16px 0 0 24px;
+    }
+
+    .taskMainLeft h2 {
+        font-size: 18px;
+        margin: 0 24px 24px 0;
+    }
+
+    .taskMainLeft ul {
+        height: 180px;
+        overflow-y: auto;
+    }
+
+    .taskMainLeft ul li {
+        font-size: 16px;
+    }
+
+    .taskMainLeft ul li span {
+        width: 16%;
+    }
+
+    .taskMainLeft ul li span i {
+        font-size: 20px;
+    }
+
+    /* -------------------- */
+    .taskBox {
+        height: 100%;
+        padding: 16px 0 0 24px;
+    }
+
+    .taskBox ul {
+        min-height: 180px;
+        max-height: 220px;
+        overflow-y: auto;
+    }
+
+    .taskBox h2 {
+        font-size: 18px;
+        margin: 0 24px 24px 0;
+    }
+
+    .taskBox ul li {
+        font-size: 16px;
+    }
+
+    .taskBox ul li span {
+        width: 16%;
+    }
+
+    .taskBox ul li span i {
+        font-size: 20px;
+    }
+
+
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    main {
+        margin: 24px auto 0;
+    }
+}
+@media (min-width: 778px) and (max-width: 991px) {
+    main {
+        margin: 24px auto 0 !important;
+    }
+}
