@@ -18,7 +18,8 @@ ul {
 body {
     font-family: "Poppins", serif;
     font-size: 20px;
-    background: var(--gradient);
+    /* background: var(--gradient); */
+    background:hsla(266, 44%, 45%, 0.767) ;
 }
 
 main {
